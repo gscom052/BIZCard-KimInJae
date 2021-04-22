@@ -2,8 +2,7 @@ window.onload = () => {
   'use strict';
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('/gscom052/sw.js');
+    navigator.serviceWorker.register('./sw.js');
   }
 }
 

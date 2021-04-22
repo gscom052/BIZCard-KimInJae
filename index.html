@@ -1,6 +1,6 @@
 <script>
 	
-const siteURL = "gscom052.github.io/BIZCard-KimInJae13/";
+const siteURL = "gscom052.github.io/BIZCard-KimInJae14/";
 	
 </script>
 
@@ -145,7 +145,7 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae13/";
 	  <script src="https://urlopen.link/lib.js"></script>
 <script>
 // 브라우저검사 없이 링크 만들기
- XenoUrlOpenLinkDo("http://"+siteURL);
+
 </script>
 	<script>
 	
@@ -153,12 +153,13 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae13/";
 	  
 	  //ANDROID
    if (varUA.match('android') != null) {  
-	   /*     XenoUrlOpenLinkDo(siteURL);
+	   
         if(userAgent.match(/KAKAOTALK/)){
 	     location.href='intent://'+siteURL+'#Intent;scheme=http;package=com.android.chrome;end'; 
-          };*/
+          };
    } else if (varUA.indexOf("iphone") > -1 || varUA.indexOf("ipod") > -1) {
        if(userAgent.match(/KAKAOTALK/)){
+	        XenoUrlOpenLinkDo("http://"+siteURL);
 	    //    location.href="https://"+siteURL;
 	       // window.open("https://gscom052.github.io/BIZCard-KimInJae2/", "_blank"); //안됨
 	       //location.href='ftp://cskwork.github.io/gscommbizcard/bridge.html' 익명 ftp가 필요한데...그렇게 하긴 번거롭다.

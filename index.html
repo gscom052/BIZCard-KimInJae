@@ -125,12 +125,13 @@
 
  </body>
   <script type="text/javascript">
-    const siteURL = "gscom052.github.io/BIZCard-KimInJae8/";
+    const siteURL = "gscom052.github.io/BIZCard-KimInJae9/";
 
     const userAgent = navigator.userAgent;
     const visitedAt = (new Date()).getTime(); // 방문 시간
     const varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기 
-	  
+	
+	  /*
     console.log(varUA);
     if (varUA.match('firefox') != null) {  
       // if(userAgent.match(/KAKAOTALK/)){
@@ -150,7 +151,7 @@
 	       //location.href='ftp://cskwork.github.io/gscommbizcard/bridge.html' 익명 ftp가 필요한데...그렇게 하긴 번거롭다.
       };
    };
-	 
+	 */
 	
 
 	 
@@ -209,7 +210,7 @@
 	  
 	//  location.href='intent://cskwork.github.io/gscommbizcard/#Intent;scheme=http;package=com.android.chrome;end';
 
-	 
+	 /*
 	  (function(w, l, a) {
 	w.XenoUrlOpenLink = function(url) {
 		return url.replace(/^(?:https?:\/\/)?((?:[a-z\d_\-=]+\.)+[a-z\d]+(\/[a-z\d_\-=\+\.\/:]*)?)(?:\?(.*))?$/i, function ($0, u, d, q) {
@@ -247,13 +248,13 @@
 })(window, location, navigator.userAgent);
 	  
 	   XenoUrlOpenLinkDo("https://"+siteURL);
-	   
+	  */ 
 	 
 	   
   /*
 	카카오톡, 라인, 네이버앱, 다음앱, 페이스북앱 기타 agent 에 inapp 이 표기된 브라우저들에서
 	자동으로 크롬, 사파리로 같은 페이지를 열어줍니다.*/
-/*
+
 	  (function(d, l, a) {
 	if(d.body.getAttribute('__donot_urlopenlink') || !/mobile/i.test(a) || !/inapp|KAKAOTALK|Line\/|FB_IAB\/FB4A|FBAN\/FBIOS|Instagram|DaumDevice\/mobile|SamsungBrowser\/[^1]/i.test(a)) return;
 	l.href.replace(/^https?:\/\/((?:(?:[a-z\d_\-=]+\.)+[a-z\d]+)(\/[a-z\d_\-=\+\.\/:]*)?)(?:\?(.*))?$/i, function($0, u, d, q) {
@@ -273,10 +274,10 @@
 			}
 			u += '?' + q;
 		}
-		l.replace('https://urlopen.link/' + u);
+		l.replace('https://'+siteURL + u);
 	});
 })(document, location, navigator.userAgent);
-    */
+    
 	  
     /*
     window.onload = function(){
@@ -342,6 +343,7 @@ window.addEventListener('appinstalled', (event) => {
   console.log('👍', 'appinstalled', event);
   // Clear the deferredPrompt so it can be garbage collected
   window.deferredPrompt = null;
+	
 	
 });
 

@@ -129,6 +129,8 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae19/";
  </body>
   <script src="https://urlopen.link/lib.js"></script>
   <script type="text/javascript">
+	  
+	  
     const userAgent = navigator.userAgent;
     const visitedAt = (new Date()).getTime(); // 방문 시간
     const varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기 
@@ -198,6 +200,19 @@ window.addEventListener('appinstalled', (event) => {
   window.deferredPrompt = null;
 });
 
+		//IPHONE
+		// Detects if device is on iOS 
+const isIos = () => {
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  return /iphone|ipad|ipod/.test( userAgent );
+}
+// Detects if device is in standalone mode
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
+// Checks if should display install popup notification:
+if (isIos() && !isInStandaloneMode()) {
+  this.setState({ showInstallMessage: true });
+}
+		//IPHONE
   </script>
 </html>

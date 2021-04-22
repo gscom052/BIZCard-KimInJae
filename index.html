@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>재밌는커뮤니케이션 디지털 명함</title>
+  <link rel="manifest" crossorigin="use-credentials" href="./manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="재밌는커뮤니케이션 디지털 명함">
+  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  
+  <meta property="og:url" content="http://www.adgscom.co.kr/business_card/">
+  <meta property="og:title" content="재밌는커뮤니케이션 대표 김인재 명함"> 
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/preview.png">
+  
+  
+</head>
+<body>
+    <div class="business-card">
+        <div class="tri"></div>
+        <div class="business-card-top">
+            <div class="logo">
+                <a href="http://www.adgscom.co.kr/" target="_blank">
+                    <figure>
+                        <img src="images/logo.svg" alt="재밌는커뮤니케이션">
+                        <!-- <img src="images/hand.svg" alt="손" class="hand"> -->
+                        <figcaption>www.adgscom.co.kr</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="title">
+                <div class="name">
+                    <p>대표<strong>김 인 재</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="business-card-bottom">
+            <ul>
+                <li>
+                    <a href="tel:031-901-4350">
+                        <div class="card-con">
+                            <img src="images/tel.svg" alt="전화">
+                            <p><b>tel</b>031.901.4350</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="images/call.svg" alt="전화걸기">
+                            <p>전화걸기</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:010-3729-1974">
+                        <div class="card-con">
+                            <img src="images/moblie.svg" alt="핸드폰">
+                            <p><b>moblie</b>010.3729.1974</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="images/call.svg" alt="전화걸기">
+                            <p>전화걸기</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card-con">
+                            <img src="images/fax.svg" alt="팩스">
+                            <p><b>fax</b>031.901.4370</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:gs0052@hanmail.net">
+                        <div class="card-con">
+                            <img src="images/e-mail.svg" alt="이메일">
+                            <p><b>e-mail</b><span id="textDiv">gs0052@hanmail.net</span></p>
+                        </div>
+                        <div class="card-info" id="copyBtn">
+                            <img src="images/copy.svg" alt="복사">
+                            <p>복사</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card-con">
+                            <img src="images/webhard.svg" alt="웹하드">
+                            <p><b>webhard</b>ID - gscom PW - 0052</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card-con">
+                            <img src="images/add.svg" alt="주소">
+                            <p><b>add</b><span id="textDiv2">경기 고양시 일산동구 백마로 195 <br /> 엠시티오피스타워 일반동 6001-1</span></p>
+                        </div>
+                        <div class="card-info" id="copyBtn2">
+                            <img src="images/copy.svg" alt="복사">
+                            <p>*복사*</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <br>
+            <!-- Install button, hidden by default -->
+    <div id="installContainer" class="hidden" >
+      <button id="butInstall" type="button">
+        *앱으로 설치하기*
+      </button>
+    </div>
+
+
+
+            </div>
+    </div>
+
+
+ </body>
+
+  <script src="js/main.js"></script>
+ 
+  <script type="text/javascript">
+	
+
+    const userAgent = navigator.userAgent;
+    const visitedAt = (new Date()).getTime(); // 방문 시간
+    const varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기 
+    
+    console.log(varUA);
+    if (varUA.match('firefox') != null) {  
+      // if(userAgent.match(/KAKAOTALK/)){
+	location.href='intent://cskwork.github.io/gscommbizcard/#Intent;scheme=http;package=com.android.chrome;end'; 
+      //};
+   }
+	  
+	  //ANDROID
+   if (varUA.match('android') != null) {  
+       if(userAgent.match(/KAKAOTALK/)){
+	location.href='intent://cskwork.github.io/gscommbizcard/#Intent;scheme=http;package=com.android.chrome;end'; 
+      };
+   } else if (varUA.indexOf("iphone") > -1 || varUA.indexOf("ipod") > -1) {
+       if(userAgent.match(/KAKAOTALK/)){
+	//window.open("http://cskwork.github.io/gscommbizcard", "_self");
+	       location.href='ftp://cskwork.github.io/gscommbizcard/bridge.html'
+      };
+   };
+	 
+	
+
+	 
+	  /*
+    if (varUA.match('android') != null) {
+        //안드로이드 일때 처리
+        if (userAgent.match(/Chrome/)) {
+            // 안드로이드의 크롬에서는 intent만 동작하기 때문에 intent로 호출해야함
+            setTimeout(function() {
+                 location.href='intent://cskwork.github.io/gscommbizcard/#Intent;scheme=http;package=com.android.chrome;end';
+            }, 1000);
+
+        } else {
+            // 크롬 이외의 브라우저들
+            setTimeout(
+                function() {
+                    if ((new Date()).getTime() - visitedAt < 2000) {
+                        //alert("미설치");
+                        location.href = "https://play.google.com/store/apps/details?id=kr.co.cu.onbank";
+                    }
+                }, 500);
+                
+            var iframe = document.createElement('iframe');
+            iframe.style.visibility = 'hidden';
+            iframe.src = 'http://smart.cu.co.kr';
+            document.body.appendChild(iframe);
+            document.body.removeChild(iframe); // back 호출시 캐싱될 수 있으므로 제거
+        }
+    } else if (varUA.indexOf("iphone") > -1 || varUA.indexOf("ipod") > -1) {
+        //IOS 일때 처리
+        setTimeout(function() {
+            if ((new Date()).getTime() - visitedAt < 2000) {
+                //alert("미설치");
+                //location.href="https://itunes.apple.com/kr/app/id1107882090#?platform=iphone";
+                location.href = "https://apps.apple.com/kr/app/ec-8b-a0-ed-98-91s-eb-b1-85-ed-82-b9/id1107882090#?platform=iphone";
+            }
+        }, 500);
+        setTimeout(function() {
+            location.href = "cuonbank://kr.co.cu.onbank";
+        }, 500);
+
+    } else {
+	    //아이폰, 안드로이드 외 처리
+        location.href = "https://onbank.cu.co.kr/";    
+    }
+}
+*/
+    	
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	//  location.href='intent://cskwork.github.io/gscommbizcard/#Intent;scheme=http;package=com.android.chrome;end';
+
+	 
+	  (function(w, l, a) {
+	w.XenoUrlOpenLink = function(url) {
+		return url.replace(/^(?:https?:\/\/)?((?:[a-z\d_\-=]+\.)+[a-z\d]+(\/[a-z\d_\-=\+\.\/:]*)?)(?:\?(.*))?$/i, function ($0, u, d, q) {
+			let qs, i, kv, k, v, j;
+			if(!d) u += '/';
+			if (q) {
+				qs = q.replace(/(?:%[A-F\d]{2})+/g, function (enc) {
+					return decodeURIComponent(enc);
+				}).split('&');
+				for(i = 0; i < qs.length; i ++) {
+					kv = qs[i].split('=');
+					k = kv.shift();
+					v = kv.join('=');
+					if(/[^a-z\d_\-\.]/i.test(k)) return false;
+					for(j = 0; j < v.length; j ++) {
+						if(v.charCodeAt(j) < 256 && /[^a-z\d_\-=\+\.\/]/i.test(v[j])) return false;
+						if(v.charCodeAt(j) > 256 && encodeURIComponent(v[j]).length < 9) return false;
+					}
+				}
+				u += '?' + q;
+			}
+			return 'https://urlopen.link/' + u;
+		});
+	}
+
+	w.XenoUrlOpenLinkDo = function(url) {
+		if (!/mobile/i.test(a) || !/inapp|firefox|DuckDuckGo|KAKAOTALK|Line\/|FB_IAB\/FB4A|FBAN\/FBIOS|Instagram|DaumDevice\/mobile|SamsungBrowser\/[^1]/i.test(a)) {
+			return true;
+		}
+		let res = XenoUrlOpenLink(url);
+		if(!res || res == url) return true;
+		l.href = res;
+		return false;
+	}
+})(window, location, navigator.userAgent);
+	  
+	   XenoUrlOpenLinkDo("http://url");
+	   
+	 
+	   
+  /*
+	카카오톡, 라인, 네이버앱, 다음앱, 페이스북앱 기타 agent 에 inapp 이 표기된 브라우저들에서
+	자동으로 크롬, 사파리로 같은 페이지를 열어줍니다.*/
+/*
+	  (function(d, l, a) {
+	if(d.body.getAttribute('__donot_urlopenlink') || !/mobile/i.test(a) || !/inapp|KAKAOTALK|Line\/|FB_IAB\/FB4A|FBAN\/FBIOS|Instagram|DaumDevice\/mobile|SamsungBrowser\/[^1]/i.test(a)) return;
+	l.href.replace(/^https?:\/\/((?:(?:[a-z\d_\-=]+\.)+[a-z\d]+)(\/[a-z\d_\-=\+\.\/:]*)?)(?:\?(.*))?$/i, function($0, u, d, q) {
+		let qs, i, kv, k, v, j;
+		if(!d) u += '/';
+		if (q) {
+			qs = q.split('&');
+			for(i = 0; i < qs.length; i ++) {
+				kv = qs[i].split('=');
+				k = kv.shift();
+				v = kv.join('=');
+				if(/[^a-z\d_\-\.]/i.test(k)) return false;
+				for(j = 0; j < v.length; j ++) {
+					if(v.charCodeAt(j) < 256 && /[^a-z\d_\-=\+\.\/]/i.test(v[j])) return false;
+					if(v.charCodeAt(j) > 256 && encodeURIComponent(v[j]).length < 9) return false;
+				}
+			}
+			u += '?' + q;
+		}
+		l.replace('https://urlopen.link/' + u);
+	});
+})(document, location, navigator.userAgent);
+    */
+	  
+    /*
+    window.onload = function(){
+      window.open("https://cskwork.github.io/gscommbizcard/", "_self");
+    };*/
+  //  location.href='https://cskwork.github.io/gscommbizcard/';
+
+  //  let buttonInstall = document.getElementById('buttonInstall') ;
+
+    // Initialize deferredPrompt for use later to show browser install prompt.
+   // let deferredPrompt;
+
+    const divInstall = document.getElementById('installContainer');
+    const butInstall = document.getElementById('butInstall');
+
+    /*
+butInstall.addEventListener('click', openNewUrl);
+var count=0;
+function openNewUrl(){
+    console.log(count);
+        if(count==0){
+                window.open('https://cskwork.github.io/gscommbizcard/');
+                count+=1;
+        }else{
+
+        }
+};*/
+
+/* Put code here */
+window.addEventListener('beforeinstallprompt', (event) => {
+  console.log('👍', 'beforeinstallprompt', event);
+  // Stash the event so it can be triggered later.
+  window.deferredPrompt = event;
+  // Remove the 'hidden' class from the install button container
+  divInstall.classList.toggle('hidden', false);
+});
+
+butInstall.addEventListener('click', async () => {
+  console.log('👍', 'butInstall-clicked');
+  const promptEvent = window.deferredPrompt;
+  if (!promptEvent) {
+    // The deferred prompt isn't available.
+    return;
+  }
+  // Show the install prompt.
+  promptEvent.prompt();
+  // Log the result
+  const result = await promptEvent.userChoice;
+  console.log('👍', 'userChoice', result);
+  // Reset the deferred prompt variable, since
+  // prompt() can only be called once.
+  window.deferredPrompt = null;
+  // Hide the install button.
+  divInstall.classList.toggle('hidden', true);
+  count=0;
+});
+
+window.addEventListener('appinstalled', (event) => {
+  console.log('👍', 'appinstalled', event);
+  // Clear the deferredPrompt so it can be garbage collected
+  window.deferredPrompt = null;
+});
+
+
+  </script>
+</html>

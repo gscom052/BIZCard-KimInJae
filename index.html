@@ -1,6 +1,6 @@
 <script>
 	
-const siteURL = "gscom052.github.io/BIZCard-KimInJae18/";
+const siteURL = "gscom052.github.io/BIZCard-KimInJae19/";
 	
 </script>
 
@@ -156,6 +156,11 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae18/";
 	  <script src="js/main.js"></script>
 	<script>
 
+		// beforeinstallprompt not supported in ios
+if (varUA.indexOf("iphone") > -1 || varUA.indexOf("ipod") > -1) {
+	
+}else{
+	
 /* Put code here */
 window.addEventListener('beforeinstallprompt', (event) => {
   console.log('👍', 'beforeinstallprompt', event);
@@ -164,6 +169,8 @@ window.addEventListener('beforeinstallprompt', (event) => {
   // Remove the 'hidden' class from the install button container
   divInstall.classList.toggle('hidden', false);
 });
+	
+}
 
 butInstall.addEventListener('click', async () => {
   console.log('👍', 'butInstall-clicked');

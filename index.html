@@ -333,7 +333,7 @@ butInstall.addEventListener('click', async () => {
   // prompt() can only be called once.
   window.deferredPrompt = null;
   // Hide the install button.
-  divInstall.classList.remove('hidden');
+ 
   count=0;
 });
 
@@ -341,6 +341,7 @@ window.addEventListener('appinstalled', (event) => {
   console.log('👍', 'appinstalled', event);
   // Clear the deferredPrompt so it can be garbage collected
   window.deferredPrompt = null;
+	 divInstall.classList.remove('hidden');
 });
 
 

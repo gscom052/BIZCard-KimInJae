@@ -41,8 +41,14 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae24/";
                     </figure>
                 </a>
             </div>
-		<div id="share">
-		</div>
+		
+	     <!-- 요기 -->
+	    <div id="sharePOS">
+		    <img src="images/share.svg" alt="공유하기"/>
+	    </div>
+		
+		
+		
             <div class="title">
                 <div class="name">
                     <p>대표<strong>김 인 재</strong></p>
@@ -132,7 +138,7 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae24/";
   <script type="text/javascript">
 function createShareButton() {
   const btn = document.createElement("button");
-
+  const sharePOS = document.getElementById("sharePOS");
   const title = document.title;
   const text = "재밌는커뮤니케이션 대표 김인재 명함";
   const url = window.location.href;
@@ -158,7 +164,7 @@ function createShareButton() {
 }
 
 document.title = "재밌는커뮤니케이션 명함";
-document.body.appendChild(createShareButton());
+sharePOS.appendChild(createShareButton());
 	  
 	  
 	  

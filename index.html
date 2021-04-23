@@ -41,6 +41,8 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae21/";
                     </figure>
                 </a>
             </div>
+		<div id="share">
+		</div>
             <div class="title">
                 <div class="name">
                     <p>대표<strong>김 인 재</strong></p>
@@ -128,14 +130,14 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae21/";
  </body>
   <script src="https://urlopen.link/lib.js"></script>
   <script type="text/javascript">
-	  function createShareButton() {
+function createShareButton() {
   const btn = document.createElement("button");
 
   const title = document.title;
   const text = "재밌는커뮤니케이션 대표 김인재 명함";
   const url = window.location.href;
 
-  btn.innerText = "share" in navigator ? "Share" : "Share via e-mail";
+  btn.innerText = "share" in navigator ? "공유" : "이메일 공유하기";
 
   btn.onclick = () => {
     if (navigator.share !== undefined) {
@@ -156,7 +158,7 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae21/";
 }
 
 document.title = "재밌는커뮤니케이션 명함";
-document.body.appendChild(createShareButton());
+document.div.appendChild(createShareButton());
 	  
 	  
 	  

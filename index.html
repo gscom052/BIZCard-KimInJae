@@ -1,6 +1,6 @@
 <script>
 	
-const siteURL = "gscom052.github.io/BIZCard-KimInJae23/";
+const siteURL = "gscom052.github.io/BIZCard-KimInJae21/";
 	
 </script>
 
@@ -37,14 +37,13 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae23/";
                 <a href="http://www.adgscom.co.kr/" target="_blank">
                     <figure>
                         <img src="images/logo.svg" alt="재밌는커뮤니케이션">
-                        <!-- <img src="images/hand.svg" alt="손" class="hand"> -->
                         <figcaption>www.adgscom.co.kr</figcaption>
                     </figure>
                 </a>
             </div>
             <div class="title">
                 <div class="name">
-                    <p>대표<strong>김 해 진</strong></p>
+                    <p>대표<strong>김 인 재</strong></p>
                 </div>
             </div>
         </div>
@@ -110,19 +109,19 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae23/";
                         </div>
                         <div class="card-info" id="copyBtn2">
                             <img src="images/copy.svg" alt="복사">
-                            <p>*복사*</p>
+                            <p>복사</p>
                         </div>
                     </a>
                 </li>
             </ul>
-            <br>
-            <!-- Install button, hidden by default -->
-    <div id="installContainer" class="hidden" >
-      <button id="butInstall" type="button">
-        *앱으로 설치하기*
-      </button>
-    </div>
-            </div>
+        </div>
+        <!-- Install button, hidden by default -->
+        <div id="installContainer" class="hidden" >
+        <button id="butInstall" type="button">
+            <img src="images/download.svg" alt="명함 다운로드">
+            명함 다운로드
+        </button>
+        </div>
     </div>
 
 
@@ -133,7 +132,7 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae23/";
   const btn = document.createElement("button");
 
   const title = document.title;
-  const text = "Check this out!";
+  const text = "재밌는커뮤니케이션 대표 김인재 명함";
   const url = window.location.href;
 
   btn.innerText = "share" in navigator ? "Share" : "Share via e-mail";
@@ -156,7 +155,7 @@ const siteURL = "gscom052.github.io/BIZCard-KimInJae23/";
   return btn;
 }
 
-document.title = "Demo";
+document.title = "재밌는커뮤니케이션 명함";
 document.body.appendChild(createShareButton());
 	  
 	  

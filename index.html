@@ -141,7 +141,7 @@ function createShareButton() {
   const text = "재밌는커뮤니케이션 대표 김인재 명함";
   const url = window.location.href;
 
-  btn.innerText = "share" in navigator ? "공유" : "이메일 공유하기";
+  btn.innerText = "share" in navigator ? "공유" : "공유";
 
   btn.onclick = () => {
     if (navigator.share !== undefined) {

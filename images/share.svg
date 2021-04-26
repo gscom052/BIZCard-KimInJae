@@ -5,13 +5,13 @@
 ]>
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="30px" height="30px" viewBox="-6.5 -5.766 30 30" enable-background="new -6.5 -5.766 30 30"
+	 x="0px" y="0px" width="20px" height="20px" viewBox="-1 -2.435 20 20" enable-background="new -1 -2.435 20 20"
 	 xml:space="preserve">
 <defs>
 </defs>
-<polyline fill="none" stroke="#BE1F21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	16,10.381 16,15.469 1,15.469 1,10.381 "/>
-<polyline fill="none" stroke="#BE1F21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	12.789,5.289 8.5,1 4.211,5.289 "/>
-<line fill="none" stroke="#BE1F21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.5" y1="1.842" x2="8.5" y2="11.907"/>
+<polyline fill="none" stroke="#B42223" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	17.5,12.265 17.5,14.631 0.5,14.631 0.5,12.265 "/>
+<polyline fill="none" stroke="#B42223" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	13.861,5.361 9,0.5 4.139,5.361 "/>
+<line fill="none" stroke="#B42223" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="9" y1="1.455" x2="9" y2="12.861"/>
 </svg>

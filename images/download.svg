@@ -8,10 +8,10 @@
 	 x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 <defs>
 </defs>
-<circle fill="#C91A1E" cx="15" cy="15" r="15"/>
-<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	23.5,16.433 23.5,22.199 6.5,22.199 6.5,16.433 "/>
-<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	10.139,13.301 15,18.162 19.861,13.301 "/>
-<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15" y1="17.207" x2="15" y2="5.801"/>
+<circle fill="#BE1F21" cx="15" cy="15" r="15"/>
+<polyline fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	23.5,17.699 23.5,20.065 6.5,20.065 6.5,17.699 "/>
+<polyline fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.139,13.435 15,18.296 19.861,13.435 "/>
+<line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15" y1="17.341" x2="15" y2="5.935"/>
 </svg>

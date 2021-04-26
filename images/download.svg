@@ -5,14 +5,13 @@
 ]>
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+	 x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 <defs>
 </defs>
-<circle fill="#E60012" cx="20" cy="20" r="20"/>
-<path fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M18.218,11.582v7.64
-	h-4.887l6.667,6.668l6.669-6.668h-4.886v-7.64c0-0.984-0.799-1.782-1.783-1.782C19.016,9.8,18.218,10.598,18.218,11.582z"/>
-<path fill="#FFFFFF" d="M18.218,11.582v7.64h-4.887l6.667,6.668l6.669-6.668h-4.886v-7.64c0-0.984-0.799-1.782-1.783-1.782
-	C19.016,9.8,18.218,10.598,18.218,11.582z"/>
+<circle fill="#C91A1E" cx="15" cy="15" r="15"/>
 <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	30,24.436 30,30.2 10,30.2 10,24.436 "/>
+	23.5,16.433 23.5,22.199 6.5,22.199 6.5,16.433 "/>
+<polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	10.139,13.301 15,18.162 19.861,13.301 "/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15" y1="17.207" x2="15" y2="5.801"/>
 </svg>

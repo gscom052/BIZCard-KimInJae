@@ -82,6 +82,7 @@ img{vertical-align:top;max-width:100%;height: auto;}
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 50px 20px 0;
+	position: relative;
 }
 
 .business-card-top .logo a figure figcaption{
@@ -92,6 +93,10 @@ img{vertical-align:top;max-width:100%;height: auto;}
 /* 로고 */
 .logo figure{position: relative; width: 70%;}
 .logo figcaption{color: #d6121a;}
+
+/* 공유 */
+#sharePOS{position: absolute; top: 20px; right: 20px; }
+#sharePOS button{background: url(../images/share.svg) 0 0 no-repeat; width: 32px; height: 50px; padding-top: 20px; font-size: 14px;}
 
 /* 성함 */
 .title{margin-top: 30px; width: 100%;}

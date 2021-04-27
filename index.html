@@ -138,7 +138,7 @@ function createShareButton() {
   const btn = document.createElement("button");
   const sharePOS = document.getElementById("sharePOS");
   const title = document.title;
-  const url = window.location.href;
+  const url = 'https://'+siteURL;
 
   btn.innerText = "share" in navigator ? "공유" : "공유";
 
